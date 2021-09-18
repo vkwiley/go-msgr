@@ -11,3 +11,7 @@ build:
 .PHONY: clean
 clean:
 	rm -f bin/msgr
+
+.PHONY: fmt
+fmt:
+	go fmt ./...

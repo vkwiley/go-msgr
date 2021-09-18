@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"go-msgr/pkg/config"
 	"go-msgr/pkg/display"
-	"go-msgr/pkg/transport"
 	"go-msgr/pkg/input"
+	"go-msgr/pkg/transport"
 )
 
 const version = "v0.0.1"

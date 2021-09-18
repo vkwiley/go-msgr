@@ -1,10 +1,10 @@
 package transport
 
 import (
-	"testing"
-	"time"
 	"fmt"
 	"go-msgr/pkg/display"
+	"testing"
+	"time"
 )
 
 const testAddress = "localhost:8080"
@@ -17,7 +17,7 @@ func TestTransport(t *testing.T) {
 	if err != nil {
 		disp.Show(fmt.Errorf("Transport test error: %w", err).Error())
 	}
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 	sender.Send(testAddress, "Test message\n")
-	time.Sleep(3*time.Second)
+	time.Sleep(3 * time.Second)
 }

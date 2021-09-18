@@ -1,12 +1,11 @@
 package transport
 
 import (
-	"net"
 	"fmt"
+	"net"
 )
 
 type Sender struct {
-
 }
 
 func NewSender() Sender {

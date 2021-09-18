@@ -6,15 +6,15 @@ import (
 )
 
 const (
-	listenAddrKey = "ListenAddr"
+	listenAddrKey      = "ListenAddr"
 	destinationAddrKey = "DestinationAddr"
-	filePathKey = "FilePath"
+	filePathKey        = "FilePath"
 )
 
 type Config struct {
-	ListenAddr string
+	ListenAddr      string
 	DestinationAddr string
-	FilePath string
+	FilePath        string
 }
 
 func (c *Config) Init() {

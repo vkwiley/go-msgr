@@ -1,10 +1,10 @@
 package transport
 
 import (
-	"net"
-	"fmt"
 	"bufio"
+	"fmt"
 	"go-msgr/pkg/display"
+	"net"
 )
 
 type Listener struct {

@@ -1,16 +1,16 @@
 package input
 
 import (
-	"go-msgr/pkg/transport"
-	"go-msgr/pkg/display"
 	"bufio"
 	"fmt"
+	"go-msgr/pkg/display"
+	"go-msgr/pkg/transport"
 	"os"
 )
 
 type Input struct {
-	sender transport.Sender
-	disp *display.Display
+	sender      transport.Sender
+	disp        *display.Display
 	destination string
 }
 
