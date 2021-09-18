@@ -2,7 +2,7 @@ all: build
 
 .PHONY: test
 test:
-	go test ./...
+	go test ./... -v
 
 .PHONY: build
 build:
