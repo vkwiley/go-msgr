@@ -11,6 +11,10 @@ type Listener struct {
 	disp *display.Display
 }
 
+func NewListener(disp *display.Display) Listener {
+	return Listener{disp}
+}
+
 func (l *Listener) Listen(listenAddr string) error {
 	ln, err := net.Listen("tcp", listenAddr)
 	if err != nil {

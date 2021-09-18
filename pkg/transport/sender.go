@@ -9,6 +9,10 @@ type Sender struct {
 
 }
 
+func NewSender() Sender {
+	return Sender{}
+}
+
 func (s *Sender) Send(destination, message string) error {
 	conn, err := net.Dial("tcp", destination)
 	if err != nil {
